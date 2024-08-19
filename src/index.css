@@ -1,0 +1,40 @@
+/* Reset CSS básico */
+
+/* Eliminar márgenes y padding de todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Asegurar que las imágenes no se salgan de sus contenedores */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Eliminar las viñetas de las listas */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Eliminar el subrayado de los enlaces */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Hacer que los botones no tengan bordes ni fondos por defecto */
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Configuración básica para el body */
+  body {
+    line-height: 1.5;
+    font-family: sans-serif;
+  }
+  

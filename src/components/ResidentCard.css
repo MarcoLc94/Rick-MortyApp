@@ -1,0 +1,30 @@
+.resident-container {
+    padding: 20px 20px 20px 20px;
+    border: yellow solid 2px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(75, 196, 75);
+    margin: 10px;
+
+    header img {
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    section {
+        h3 {
+            text-shadow: 
+            -2px -2px 0 yellow,  /* Sombra arriba a la izquierda */
+            2px -2px 0 yellow,   /* Sombra arriba a la derecha */
+            -2px 2px 0 yellow,   /* Sombra abajo a la izquierda */
+            2px 2px 0 yellow; 
+        }
+
+        li{
+            color: yellow;
+        }
+    }
+}
+
+.resident-container:hover {
+    filter: drop-shadow(0px 0px 10px rgb(0, 255, 0));
+}
+

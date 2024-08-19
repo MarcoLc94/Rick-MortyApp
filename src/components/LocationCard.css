@@ -1,0 +1,33 @@
+.card-container {
+    padding: 20px 10px 10px 10px;
+    border: yellow solid 2px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(75, 196, 75);
+
+    h2 {
+        padding: 10px;
+        color: rgb(26, 26, 26);
+        text-shadow: 
+        -2px -2px 0 yellow,  /* Sombra arriba a la izquierda */
+        2px -2px 0 yellow,   /* Sombra arriba a la derecha */
+        -2px 2px 0 yellow,   /* Sombra abajo a la izquierda */
+        2px 2px 0 yellow; 
+    }
+
+    ul {
+        text-align: justify;
+        color: yellow;
+    }
+}
+
+.card-container:hover {
+    transform: scale(1.1);
+}
+
+@media(width > 381px) {
+    .card-container {
+        max-height: 30vh;
+        max-width: 60vw;
+        
+    }
+}

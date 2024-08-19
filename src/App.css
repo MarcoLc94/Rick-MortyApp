@@ -1,0 +1,135 @@
+.container-app {
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+    color: rgb(0, 125, 209);
+
+    h1{
+        text-shadow: 
+    -2px -2px 0 yellow,  /* Sombra arriba a la izquierda */
+    2px -2px 0 yellow,   /* Sombra arriba a la derecha */
+    -2px 2px 0 yellow,   /* Sombra abajo a la izquierda */
+    2px 2px 0 yellow; 
+
+    padding: 0px 0px 20px 0px;
+
+    filter: drop-shadow(0px 0px 10px yellow);
+    }
+
+    text-align: center;
+
+    padding: 20px;
+
+    .title-container {
+        display: flex;
+        height: 10vh;
+        margin: 10px;
+
+        img {
+            width: 80px;
+            filter: drop-shadow(0px 0px 15px green);
+            opacity: 0.9;
+        }
+    }
+
+    .info-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .form-container {
+        form {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin: 20px;
+            padding-bottom: 20px;
+
+            button {
+                background-color: green;
+                color: yellow;
+                width: 40%;
+                padding: 10px 20px 10px 20px;
+                border-radius: 10px 10px 10px 10px;
+                text-align: center;
+                filter: drop-shadow(0px 0px 10px rgb(4, 255, 4));
+            }
+
+            button:hover {
+                background-color: rgb(0, 255, 0);
+                color: green;
+                filter: drop-shadow(0px 0px 15px rgb(1, 255, 1));
+                transform: scale(1.1);
+            }
+
+            input {
+                width: 70%;
+                padding: 15px;
+                color: green;
+                font-weight: 700;
+                background: rgb(231, 247, 7);
+                filter: drop-shadow(0px 0px 10px rgb(4, 255, 4));
+                border-radius: 10px 10px 10px 10px;
+            }
+        }
+    }
+}
+
+@media(width > 381px){
+    .container-app {
+
+        .title-container {
+            height: 10vh;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                font-size: 30px;
+                text-align: center;
+            }
+            
+
+            span {
+
+                img{
+                    width: 80px;
+                }
+            }
+        }
+
+        .form-container {
+            form{
+                width: 100vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+
+                input {
+                    height: 0.3rem;
+                    border-radius: 10px 10px 10px 10px;
+                    width: 20%;
+                }
+
+                button {
+                    width: 20%;
+                }
+            }
+        }
+
+
+        .info-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        .cards-characters {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
